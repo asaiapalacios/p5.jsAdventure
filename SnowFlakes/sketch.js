@@ -1,3 +1,9 @@
+/*
+  Snowing effect using the p5.js library
+  Starting point/source of inspiration:
+  https://alexdudescu.wordpress.com/2017/01/17/1-snowing-effect/
+*/
+
 // Initialize screen size
 var screenWidth = 1024;
 var screenHeight = 660;
