@@ -13,27 +13,21 @@ var flakeNumber = 100;
 var flakes = [];
 
 function setup() {
-    // Create a canvas
     createCanvas(screenWidth, screenHeight);
-    // Disable outline
-    noStroke();
+    noStroke(); // Disable outline
 
-    for (var i = 0; i < flakeNumber; i++)
-    {
-      // Create a new snowflake
-      flakes[i] = new SnowEffect();
+    for (var i = 0; i < flakeNumber; i++) {
+      flakes[i] = new Flake(); // Create instance of a snowflake (flakeNumber = 100)
       // Spawn snowflake randomly on the screen
-      flakes[i].spawnRandom();
+      //flakes[i].spawnRandom();
     }
 }
 
 function draw() {
-    // Draw a background of color 45
     background(45);
 
     // Update and display the position of each snowflake
-    for (var i = 0; i < flakeNumber; i++)
-    {
+    for (var i = 0; i < flakeNumber; i++) {
       flakes[i].update();
       flakes[i].show();
     }

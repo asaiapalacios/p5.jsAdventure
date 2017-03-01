@@ -1,5 +1,5 @@
 // Create a constructor function/class for a SnowEffect object
-function SnowEffect() { // Note: JavaScript uses functions as classes
+function Flake() { // Note: JavaScript uses functions as classes
    /* 
    'this' refers to the new instance of the SnowEffect object that is being created.
    When the function includes 'this', it is saying all new instances will be
