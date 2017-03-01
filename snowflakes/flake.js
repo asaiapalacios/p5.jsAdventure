@@ -24,8 +24,8 @@ function Flake() { // Note: JavaScript uses functions as classes
    this.spawnRandom = function()
 
    {
-     this.x = floor(random(0, screenWidth));
-     this.y = 0;
+     this.x = random(screenWidth); // floor(random(0, screenWidth));
+     this.y = random(-500, -50);
      this.z = random(0, 1); // Assign a random value to give a sense of depth
 
      this.flakeOpacity = random(0, 1);
@@ -33,10 +33,12 @@ function Flake() { // Note: JavaScript uses functions as classes
      this.flakeSpeed = this.flakeBaseSpeed + 3 * this.z;
    }
 
-   // Draw flakes  
+   // Function to render flakes on the screen
    this.show = function()
    {
-      fill('rgba(255, 255, 255, '+ this.flakeOpacity.toString() +')');
+      // Set color to fill ellipse; Return a string representation of a vector (logs vectors in the console)     
+      fill('rgba(255, 255, 255, '+ this.flakeOpacity.toString() +')'); 
+      // Method syntax --> ellipse(x,y,w,[h])
       ellipse(this.x, this.y, this.flakeDiameter, this.flakeDiameter);
    }
 

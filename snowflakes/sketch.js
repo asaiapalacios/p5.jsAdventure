@@ -4,11 +4,11 @@
   https://alexdudescu.wordpress.com/2017/01/17/1-snowing-effect/
 */
 
-// Initialize screen size
+// Declare and initialize screen size
 var screenWidth = 1024;
 var screenHeight = 660;
 
-// Initialize flake array
+// Declare and initialize flake array
 var flakeNumber = 100;
 var flakes = [];
 
@@ -17,18 +17,18 @@ function setup() {
     noStroke(); // Disable outline
 
     for (var i = 0; i < flakeNumber; i++) {
-      flakes[i] = new Flake(); // Create instance of a snowflake (flakeNumber = 100)
+      flakes[i] = new Flake(); // Make 100 new flakes in this array
       // Spawn snowflake randomly on the screen
-      //flakes[i].spawnRandom();
+      flakes[i].spawnRandom();
     }
 }
 
 function draw() {
-    background(45);
+    background(50, 122, 193);
 
-    // Update and display the position of each snowflake
+    // Display and update the position of each snowflake
     for (var i = 0; i < flakeNumber; i++) {
-      flakes[i].update();
       flakes[i].show();
+      flakes[i].update();
     }
 }
