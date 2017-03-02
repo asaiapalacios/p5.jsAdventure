@@ -6,7 +6,7 @@ function SnowMan() {
   var offsetHand = 30;
 
   stroke(210);
-	fill(snowColor);
+  fill(snowColor);
 
   // Bottom circle (x,y,width,height) 
   ellipse(centerX,640,100,100);
