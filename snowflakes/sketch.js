@@ -6,7 +6,7 @@
 
 // Declare and initialize screen size
 var screenWidth = 1024;
-var screenHeight = 660;
+var screenHeight = 650;
 
 // Declare and initialize flake array
 var flakeNumber = 100;
