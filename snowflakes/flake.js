@@ -1,4 +1,4 @@
-// Create a constructor function/class for a SnowEffect object
+// Create a constructor function/class for a Flake object
 function Flake() { // Note: JavaScript uses functions as classes
    /* 
    'this' refers to the new instance of the SnowEffect object that is being created.

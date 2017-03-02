@@ -31,4 +31,5 @@ function draw() {
       flakes[i].show();
       flakes[i].update();
     }
+    var snowman = new SnowMan();
 }
