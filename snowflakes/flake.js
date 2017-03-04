@@ -38,7 +38,7 @@ function Flake() { // Note: JavaScript uses functions as classes
    {
       // Set color to fill ellipse; Return a string representation of a vector (logs vectors in the console)     
       fill('rgba(255, 255, 255, '+ this.flakeOpacity.toString() +')'); 
-      // Method syntax --> ellipse(x,y,w,[h])
+      // Method syntax --> ellipse(x,y,width,[height])
       ellipse(this.x, this.y, this.flakeDiameter, this.flakeDiameter);
    }
 
